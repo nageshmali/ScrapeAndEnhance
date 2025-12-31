@@ -20,22 +20,26 @@ https://beyondchattask.onrender.com/api/articles?includeAll=true
 
 ## Project Phases
 🔹 Phase 1 – Web Scraping & Storage
-             Scrapes articles using Puppeteer / Cheerio
-             Stores raw articles in MongoDB
-             Avoids duplicates
-             Saves metadata like title, author, URL, content
+            - Scrapes articles using Puppeteer / Cheerio
+            - Stores raw articles in MongoDB
+            - Avoids duplicates
+            - Saves metadata like title, author, URL, content
+            
+             
+             
+             
 
 🔹 Phase 2 – AI Article Enhancement
-             Uses Groq API (free tier)
-             Enhances scraped articles
-             Stores enhanced versions with reference to original article
-             Triggered via API endpoint
+            - Uses Groq API (free tier)
+            - Enhances scraped articles
+            - Stores enhanced versions with reference to original article
+            - Triggered via API endpoint
 
 🔹 Phase 3 – React Frontend
-             Fetches articles from backend API
-             Displays:
-                  Original articles
-                  Enhanced (AI‑rewritten) articles
+            - Fetches articles from backend API
+            - Displays:
+                - Original articles
+                - Enhanced (AI‑rewritten) articles
 
 ## Tech Stack
 Frontend - React.js, Axios, Tailwind CSS, Deployed on Vercel, Responsive, professional UI using Tailwind CSS
