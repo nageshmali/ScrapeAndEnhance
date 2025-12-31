@@ -6,12 +6,18 @@ const getArticles = async (req, res) => {
 
     let query = {};
 
+    // Filter by type if specified
     if (type) {
       query.type = type;
     }
 
-    if (!includeAll) {
-      query.originalArticleId = null;
+    // FIX: Handle includeAll parameter correctly
+    if (includeAll === 'true') {
+      // Get ALL articles (both original and updated)
+      // No type filter needed
+    } else {
+      // By default, only get original articles
+      query.type = 'original';
     }
 
     const skip = (page - 1) * limit;
@@ -24,6 +30,10 @@ const getArticles = async (req, res) => {
 
     const total = await Article.countDocuments(query);
 
+    console.log('📊 Query:', query);
+    console.log('📚 Articles found:', articles.length);
+    console.log('📝 First article:', articles[0]);
+
     res.json({
       success: true,
       count: articles.length,
@@ -33,6 +43,7 @@ const getArticles = async (req, res) => {
       data: articles
     });
   } catch (error) {
+    console.error('❌ Error in getArticles:', error);
     res.status(500).json({
       success: false,
       message: 'Server Error',
