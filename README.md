@@ -1,4 +1,4 @@
-## BeyondChats – AI-Powered Article Scraper & Enhancer
+## AI-Powered Article Scraper & Enhancer
 
 A full‑stack MERN project that scrapes articles from the web, stores them in MongoDB, enhances them using an AI model, and displays both original and AI‑enhanced versions in a modern React frontend.
 This project was built in 3 clear phases.
