@@ -4,14 +4,6 @@ A full‑stack MERN project that scrapes articles from the web, stores them in M
 This project was built in 3 clear phases.
 
 
-## Live Demo (Frontend)
-- 🔗 Deployed Frontend: [https://beyond-chat-task.vercel.app/](https://beyond-chat-task.vercel.app/) <br/>
-- 🔗 Deployed Backend: [https://beyondchattask.onrender.com/](https://beyondchattask.onrender.com/) <br/>
-
-## Routes for backend link: <br/>
-https://beyondchattask.onrender.com/api/articles <br/>
-https://beyondchattask.onrender.com/api/articles?includeAll=true <br/>
-
 ## Project Architecture
 
 <p align="center">
@@ -42,8 +34,8 @@ https://beyondchattask.onrender.com/api/articles?includeAll=true <br/>
                 - Enhanced (AI‑rewritten) articles <br/>
 
 ## Tech Stack
-Frontend - React.js, Axios, Tailwind CSS, Deployed on Vercel, Responsive, professional UI using Tailwind CSS <br/>
-Backend - Node.js, Express.js, MongoDB + Mongoose, Puppeteer / Cheerio, AI Enhancement via LLM API, Deployed on Render (Free Tier) <br/>
+Frontend - React.js, Axios, Tailwind CSS, Responsive, professional UI using Tailwind CSS <br/>
+Backend - Node.js, Express.js, MongoDB + Mongoose, Puppeteer / Cheerio, AI Enhancement via LLM API <br/>
 Database - MongoDB Atlas (Cloud) <br/>
 
 
