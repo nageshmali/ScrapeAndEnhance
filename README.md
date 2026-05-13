@@ -47,10 +47,10 @@ Root folder - BeyondChatTask
    - From root folder, cd backendTaskPhaseOne
    - run npm install
    - run npm run dev
-   - open other terminal for scraping (already articles present in DB)
+   - open other terminal for scraping
    - From root folder, cd nodeScriptPhaseTwo
    - run npm install
-   - run node scraper.js
+   - run node index.js
 
 ## 2) Run Frontend
    - From root folder, cd react-phase-three
